@@ -15,7 +15,7 @@
 #define TRUE !FALSE
 
 
-/* Stores the semaphores and buffer for all the processes*/
+/* Stores the semaphores and buffer for all the processes. */
 typedef struct 
 {
 	int subtotal; /*Subtotal of ith row*/

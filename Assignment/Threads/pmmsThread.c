@@ -1,4 +1,3 @@
-
 #include "pmmsThread.h"
 
 int main(int argc, char *argv[])
@@ -26,7 +25,7 @@ int main(int argc, char *argv[])
 		if (s->m < 0 || s->n < 0 || s->k < 0)
 		{
 			printf("One or more matrix dimensions are invalid!\n");
-			exit(0);
+			return 0;
 		}
 		s->subtotal = 0;
 		s->process = 0;
@@ -53,7 +52,7 @@ int main(int argc, char *argv[])
 				printf("Thread Creation Failed!");
 				exit(0);
 			}
-			pthread_detach(tid[i]);
+			pthread_detach(tid[i]);	
 		}
 
 		/*Parent Consumer Process*/
@@ -76,10 +75,12 @@ int main(int argc, char *argv[])
 		printf("Total: %d\n", total);
 		printf("%d %d %d\n", s->m, s->n, s->k);
 
+		/*Clean up allocated memory and mutexs*/
 		free(tid);
 		free(s->matrixA);
 		free(s->matrixB);
 		free(s->matrixC);
+		free(s);
 
 		pthread_mutex_destroy(&mutex);	/* Free up mutex */
   		pthread_cond_destroy(&empty);	/* Free up producer condition variable */
@@ -89,7 +90,10 @@ int main(int argc, char *argv[])
 	return 0;
 }
 
-/* Reads the matrix from a File into shared memory*/
+/* Reads the matrix from a file into memory. Imports the filename, 
+** matrix dimensions and a pointer to the shared memory where the matrix
+** will be stored.
+*/
 void readMatrix(char* filename, int rows, int columns, int* matrix)
 {
 	int ii, jj;
@@ -110,9 +114,14 @@ void readMatrix(char* filename, int rows, int columns, int* matrix)
 			}
 		}
 	}
+
+	fclose(fMatrix);
 }
 
-/* Producer Threads */
+/* The producer function that each created thread runs. Each producer thread
+** calculates the subtotal for its given row in the matrix. Imports a pointer
+** to the row number the thread is to calculate.
+*/
 void* calculateSubtotal(void* ptr)
 {
 	int i, subtotal = 0, process, n, k;
@@ -121,7 +130,7 @@ void* calculateSubtotal(void* ptr)
 	pthread_mutex_lock(&mutex);
 	process = (intptr_t)ptr - 1;
 	n = s->n; 
-	k = s->k;
+	k = s->k; 
 	pthread_mutex_unlock(&mutex);
 
 	
@@ -146,27 +155,15 @@ void* calculateSubtotal(void* ptr)
 
 	pthread_cond_signal(&full);
 	pthread_mutex_unlock(&mutex);
-
-	pthread_exit(0);
+	/*pthread_exit(0);*/
+	return 0;
 }
 
-
+/* Function to calculate the index of the 1D array that corresponds to a given
+** 2D array. Imports the rows, columns and number of columns for a 2D array and
+** returns the index.
+*/
 int getIndex(int rows, int columns, int ncols)
 {
 	return rows*ncols + columns;
-}
-
-
-void printMatrix(int* matrix, int rows, int columns)
-{
-	int ii, jj;
-	/*print out each column for each row of the 2D array for testing purposes*/
-	for (ii = 0; ii < rows; ii++)
-	{
-		for(jj = 0; jj < columns; jj++)
-		{
-			printf("%d\n", matrix[getIndex(ii, jj, columns)]);
-		}
-	}
-	printf("\n");
 }

@@ -3,10 +3,11 @@
 int main(int argc, char *argv[])
 {
 	int i, j, m, n, k, pid, total = 0, errorCheck = FALSE;
-	/*2D integer arrays*/
+	/* 2D integer arrays to point to shared memory block. */
 	int *matrixA_ptr = NULL, *matrixB_ptr = NULL, *matrixC_ptr = NULL;
 	/* Names of the shared memory objects. */
-	char *matrixA = "matrixA", *matrixB = "matrixB", *matrixC = "matrixC", *subtotal = "subtotal";
+	char *matrixA = "matrixA", *matrixB = "matrixB", *matrixC = "matrixC", 
+		*subtotal = "subtotal";
 	Shared *ptr;
 
 	/* Error check the number of command line arguements. */
@@ -40,17 +41,15 @@ int main(int argc, char *argv[])
 		readMatrix(argv[1], m, n, matrixA_ptr);
 		readMatrix(argv[2], n, k, matrixB_ptr);
 
-		/*printMatrix(matrixA_ptr, m, n);
-		printMatrix(matrixB_ptr, n, k);*/
-
-		/*Initialise semaphores. */
+		/* Initialise semaphores. */
 		sem_init(&ptr->mutex, 1, 1);
 		sem_init(&ptr->empty, 1, 1);
 		sem_init(&ptr->full, 1, 0);
 
-		/*signal(SIGCHLD, SIG_IGN);*/
+		/* Kills Zombie processes. */
+		signal(SIGCHLD, SIG_IGN);
 
-		/* Create m child processes*/
+		/* Create m child processes. */
 		for (i = 0; i < m; i++)
 		{
 			pid = fork();
@@ -62,12 +61,7 @@ int main(int argc, char *argv[])
 			/*Do child processing*/
 			else if (pid == 0)
 			{
-				sem_wait(&ptr->empty);
-				sem_wait(&ptr->mutex);
 				childProcess(matrixA_ptr, matrixB_ptr, matrixC_ptr, ptr, i, m, n, k);
-				sem_post(&ptr->mutex);
-				sem_post(&ptr->full);
-
 				exit(0);
 			}
 		}
@@ -82,15 +76,15 @@ int main(int argc, char *argv[])
 	      	sem_post(&ptr->mutex);
 	      	sem_post(&ptr->empty);
 		}
-		printf("Total: %d\n", total);
-		
+		printf("Total: %d\n", total);	
 	}
-	sleep(20);
+	/*sleep(20);*/
 	return 0;
 }
 
-/*Imports the name and size of a block of shared memory to create. 
-  Returns a pointer to the shared memory block. */
+/* Creates a shared memory block and returns a pointer to that block. Imports
+** the name and size of a block to create. 
+*/
 void* createMemory(char* name, int size)
 {
 	int shm_fd;
@@ -116,7 +110,10 @@ void* createMemory(char* name, int size)
 	return shm_ptr;
 }
 
-/* Reads the matrix from a File into shared memory*/
+/* Reads the matrix from a file into shared memory. Imports the filename, 
+** matrix dimensions and a pointer to the shared memory where the matrix
+** will be stored.
+*/
 void readMatrix(char* filename, int rows, int columns, int* matrix)
 {
 	int ii, jj;
@@ -128,7 +125,6 @@ void readMatrix(char* filename, int rows, int columns, int* matrix)
 	}
 	else
 	{
-		/*scan each column for each row of the test file and store in 2D array */
 		for (ii = 0; ii < rows; ii++)
 		{
 			for(jj = 0; jj < columns; jj++)
@@ -137,27 +133,42 @@ void readMatrix(char* filename, int rows, int columns, int* matrix)
 			}
 		}
 	}
+
+	fclose(fMatrix);
 }
 
-void childProcess(int* matrixA, int* matrixB, int* matrixC, Shared* ptr, int process, int m, int n, int k)
+/* The producer function that each child process runs. Each child producer 
+** calculates the subtotal for its given row in the matrix. Imports pointers
+** to all the shared memory blocks
+*/
+void childProcess(int* matrixA, int* matrixB, int* matrixC, Shared* ptr, 
+	int process, int m, int n, int k)
 {
 	int i, subtotal = 0;
+
 	for (i = 0; i < k; i++)
 	{
-		/*matrixC[process][i] = matrixA[process][0]*matrixB[0][i] + matrixA[process][1]*matrixB[1][i];*/
+		
 		matrixC[getIndex(process, i, k)] = 
 			matrixA[getIndex(process, 0, n)]*matrixB[getIndex(0, i, k)] 
 				+ matrixA[getIndex(process, 1, n)]*matrixB[getIndex(1, i, k)];
 
 		subtotal += matrixC[getIndex(process, i, k)];
 	}
+	
+	sem_wait(&ptr->empty);
+	sem_wait(&ptr->mutex);
 	/*Produce subtotal to be consumed. Stores the process number and the subtotal*/
 	ptr->process = process;
 	ptr->subtotal = subtotal;
-
-	/*printMatrix(matrixC, m, k);*/
+	sem_post(&ptr->mutex);
+	sem_post(&ptr->full);
 }
 
+/* Function to calculate the index of the 1D array that corresponds to a given
+** 2D array. Imports the rows, columns and number of columns for a 2D array and
+** returns the index.
+*/
 int getIndex(int rows, int columns, int ncols)
 {
 	return rows*ncols + columns;
