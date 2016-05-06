@@ -44,10 +44,10 @@ int main(int argc, char *argv[])
 		pthread_cond_init(&full, NULL);
 
 		/* Create m threads*/
-		for (i = 1; i <= s->m; i++)
+		for (i = 0; i < s->m; i++)
 		{
 			/*Thread creation error*/
-			if (pthread_create(&tid[i], NULL, calculateSubtotal, (void *)(intptr_t)i) != 0)
+			if (pthread_create(&tid[i], NULL, calculateSubtotal, (void *)(intptr_t)(i+1)) != 0)
 			{
 				printf("Thread Creation Failed!");
 				exit(0);

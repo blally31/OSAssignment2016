@@ -14,7 +14,6 @@
 #define FALSE 0
 #define TRUE !FALSE
 
-
 /* Stores the semaphores and buffer for all the processes. */
 typedef struct 
 {
