@@ -1,1 +1,0 @@
-Create shared memory in the parent process, create M child processes (replicas of the parent process) that use the shared memory

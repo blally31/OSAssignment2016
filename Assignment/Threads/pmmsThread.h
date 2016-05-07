@@ -15,13 +15,13 @@
 typedef struct 
 {
 	int subtotal; /*Subtotal of ith row*/
-	int process; /*Process ID*/
+	pthread_t thread; /*Thread ID*/
 	int* matrixA;
 	int* matrixB;
 	int* matrixC;
-	int m;
-	int n;
-	int k;
+	int m; /*Number of rows for matrix A and matrix C*/
+	int n; /*Number of columns for matrix A and rows for matrix B*/
+	int k; /*Number of columns for matrix B and matrix C*/
 } Shared;
 
 /*Shared objects - Global variables*/

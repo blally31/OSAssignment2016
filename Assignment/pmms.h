@@ -18,8 +18,8 @@
 typedef struct 
 {
 	int subtotal; /*Subtotal of ith row*/
-	int process; /*Process ID*/
-	sem_t mutex;
+	pid_t process; /*Process ID*/
+	sem_t mutex; /*Mutex semaphore*/
 	sem_t empty; /*Producer semaphore*/
 	sem_t full; /*Consumer semaphore*/
 } Shared;

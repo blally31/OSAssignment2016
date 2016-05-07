@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -pedantic -ansi
+CFLAGS = -Wall -pedantic 
 OBJ = pmms.o 
 EXEC = pmms
 
