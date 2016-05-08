@@ -1,0 +1,242 @@
+TEST 1 RESULTS
+./pmms test1MatrixA test1MatrixB 3 2 4
+
+Subtotal produced by process with ID 13018: 62
+Subtotal produced by process with ID 13019: 134
+Subtotal produced by process with ID 13020: 206
+Total: 402
+
+
+
+TEST 2 RESULTS
+./pmms test2MatrixA test2MatrixB 20 11 40
+
+Subtotal produced by process with ID 13026: 25420
+Subtotal produced by process with ID 13027: 13940
+Subtotal produced by process with ID 13028: 16400
+Subtotal produced by process with ID 13029: 9840
+Subtotal produced by process with ID 13030: 18860
+Subtotal produced by process with ID 13031: 13940
+Subtotal produced by process with ID 13032: 19680
+Subtotal produced by process with ID 13033: 21320
+Subtotal produced by process with ID 13034: 20500
+Subtotal produced by process with ID 13035: 5740
+Subtotal produced by process with ID 13036: 7380
+Subtotal produced by process with ID 13037: 20500
+Subtotal produced by process with ID 13038: 17220
+Subtotal produced by process with ID 13039: 22960
+Subtotal produced by process with ID 13040: 20500
+Subtotal produced by process with ID 13041: 14760
+Subtotal produced by process with ID 13042: 18860
+Subtotal produced by process with ID 13043: 20500
+Subtotal produced by process with ID 13044: 13940
+Subtotal produced by process with ID 13045: 18860
+Total: 341120
+
+
+
+TEST 3 RESULTS
+./pmms test3MatrixA test3MatrixB 93 21 6
+
+Subtotal produced by process with ID 13051: 1430
+Subtotal produced by process with ID 13052: 982
+Subtotal produced by process with ID 13053: 445
+Subtotal produced by process with ID 13054: 1634
+Subtotal produced by process with ID 13055: 1128
+Subtotal produced by process with ID 13056: 1040
+Subtotal produced by process with ID 13057: 1613
+Subtotal produced by process with ID 13058: 1213
+Subtotal produced by process with ID 13059: 1887
+Subtotal produced by process with ID 13060: 1311
+Subtotal produced by process with ID 13061: 1082
+Subtotal produced by process with ID 13062: 2009
+Subtotal produced by process with ID 13063: 1418
+Subtotal produced by process with ID 13064: 979
+Subtotal produced by process with ID 13065: 2433
+Subtotal produced by process with ID 13066: 2244
+Subtotal produced by process with ID 13067: 1271
+Subtotal produced by process with ID 13068: 1805
+Subtotal produced by process with ID 13069: 2442
+Subtotal produced by process with ID 13070: 884
+Subtotal produced by process with ID 13071: 823
+Subtotal produced by process with ID 13072: 2372
+Subtotal produced by process with ID 13073: 2381
+Subtotal produced by process with ID 13074: 1348
+Subtotal produced by process with ID 13075: 509
+Subtotal produced by process with ID 13076: 1857
+Subtotal produced by process with ID 13077: 1253
+Subtotal produced by process with ID 13078: 2195
+Subtotal produced by process with ID 13079: 433
+Subtotal produced by process with ID 13080: 1137
+Subtotal produced by process with ID 13081: 1619
+Subtotal produced by process with ID 13082: 918
+Subtotal produced by process with ID 13083: 1561
+Subtotal produced by process with ID 13084: 1412
+Subtotal produced by process with ID 13085: 1488
+Subtotal produced by process with ID 13086: 1442
+Subtotal produced by process with ID 13087: 1409
+Subtotal produced by process with ID 13088: 1338
+Subtotal produced by process with ID 13089: 1509
+Subtotal produced by process with ID 13090: 698
+Subtotal produced by process with ID 13091: 1570
+Subtotal produced by process with ID 13092: 1506
+Subtotal produced by process with ID 13093: 1729
+Subtotal produced by process with ID 13094: 503
+Subtotal produced by process with ID 13095: 2015
+Subtotal produced by process with ID 13096: 1680
+Subtotal produced by process with ID 13097: 826
+Subtotal produced by process with ID 13098: 863
+Subtotal produced by process with ID 13099: 1738
+Subtotal produced by process with ID 13100: 186
+Subtotal produced by process with ID 13101: 1805
+Subtotal produced by process with ID 13102: 2009
+Subtotal produced by process with ID 13103: 1695
+Subtotal produced by process with ID 13104: 1439
+Subtotal produced by process with ID 13105: 1604
+Subtotal produced by process with ID 13106: 308
+Subtotal produced by process with ID 13107: 1168
+Subtotal produced by process with ID 13108: 2067
+Subtotal produced by process with ID 13109: 1451
+Subtotal produced by process with ID 13110: 442
+Subtotal produced by process with ID 13111: 692
+Subtotal produced by process with ID 13112: 1793
+Subtotal produced by process with ID 13113: 2177
+Subtotal produced by process with ID 13114: 2061
+Subtotal produced by process with ID 13115: 1872
+Subtotal produced by process with ID 13116: 1284
+Subtotal produced by process with ID 13117: 1497
+Subtotal produced by process with ID 13118: 1924
+Subtotal produced by process with ID 13119: 857
+Subtotal produced by process with ID 13120: 1701
+Subtotal produced by process with ID 13122: 1311
+Subtotal produced by process with ID 13123: 826
+Subtotal produced by process with ID 13125: 1396
+Subtotal produced by process with ID 13126: 738
+Subtotal produced by process with ID 13127: 2183
+Subtotal produced by process with ID 13128: 1430
+Subtotal produced by process with ID 13129: 1619
+Subtotal produced by process with ID 13121: 1732
+Subtotal produced by process with ID 13130: 189
+Subtotal produced by process with ID 13131: 1543
+Subtotal produced by process with ID 13132: 939
+Subtotal produced by process with ID 13133: 1052
+Subtotal produced by process with ID 13124: 1149
+Subtotal produced by process with ID 13134: 1613
+Subtotal produced by process with ID 13135: 2253
+Subtotal produced by process with ID 13136: 951
+Subtotal produced by process with ID 13137: 1796
+Subtotal produced by process with ID 13138: 1195
+Subtotal produced by process with ID 13139: 314
+Subtotal produced by process with ID 13140: 1869
+Subtotal produced by process with ID 13141: 2049
+Subtotal produced by process with ID 13142: 1808
+Subtotal produced by process with ID 13143: 442
+Total: 129811
+
+
+
+TEST 4 RESULTS
+./pmms test4MatrixA test4MatrixB 100 100 100
+
+Subtotal produced by process with ID 13149: 200
+Subtotal produced by process with ID 13248: 200
+Subtotal produced by process with ID 13151: 200
+Subtotal produced by process with ID 13152: 200
+Subtotal produced by process with ID 13153: 200
+Subtotal produced by process with ID 13154: 200
+Subtotal produced by process with ID 13155: 200
+Subtotal produced by process with ID 13156: 200
+Subtotal produced by process with ID 13157: 200
+Subtotal produced by process with ID 13158: 200
+Subtotal produced by process with ID 13159: 200
+Subtotal produced by process with ID 13160: 200
+Subtotal produced by process with ID 13161: 200
+Subtotal produced by process with ID 13162: 200
+Subtotal produced by process with ID 13163: 200
+Subtotal produced by process with ID 13164: 200
+Subtotal produced by process with ID 13165: 200
+Subtotal produced by process with ID 13166: 200
+Subtotal produced by process with ID 13167: 200
+Subtotal produced by process with ID 13168: 200
+Subtotal produced by process with ID 13169: 200
+Subtotal produced by process with ID 13170: 200
+Subtotal produced by process with ID 13171: 200
+Subtotal produced by process with ID 13172: 200
+Subtotal produced by process with ID 13173: 200
+Subtotal produced by process with ID 13174: 200
+Subtotal produced by process with ID 13175: 200
+Subtotal produced by process with ID 13176: 200
+Subtotal produced by process with ID 13177: 200
+Subtotal produced by process with ID 13178: 200
+Subtotal produced by process with ID 13179: 200
+Subtotal produced by process with ID 13180: 200
+Subtotal produced by process with ID 13181: 200
+Subtotal produced by process with ID 13182: 200
+Subtotal produced by process with ID 13183: 200
+Subtotal produced by process with ID 13184: 200
+Subtotal produced by process with ID 13185: 200
+Subtotal produced by process with ID 13186: 200
+Subtotal produced by process with ID 13187: 200
+Subtotal produced by process with ID 13188: 200
+Subtotal produced by process with ID 13189: 200
+Subtotal produced by process with ID 13190: 200
+Subtotal produced by process with ID 13191: 200
+Subtotal produced by process with ID 13192: 200
+Subtotal produced by process with ID 13193: 200
+Subtotal produced by process with ID 13194: 200
+Subtotal produced by process with ID 13195: 200
+Subtotal produced by process with ID 13196: 200
+Subtotal produced by process with ID 13197: 200
+Subtotal produced by process with ID 13198: 200
+Subtotal produced by process with ID 13199: 200
+Subtotal produced by process with ID 13200: 200
+Subtotal produced by process with ID 13201: 200
+Subtotal produced by process with ID 13202: 200
+Subtotal produced by process with ID 13203: 200
+Subtotal produced by process with ID 13204: 200
+Subtotal produced by process with ID 13205: 200
+Subtotal produced by process with ID 13206: 200
+Subtotal produced by process with ID 13207: 200
+Subtotal produced by process with ID 13208: 200
+Subtotal produced by process with ID 13209: 200
+Subtotal produced by process with ID 13210: 200
+Subtotal produced by process with ID 13211: 200
+Subtotal produced by process with ID 13212: 200
+Subtotal produced by process with ID 13213: 200
+Subtotal produced by process with ID 13214: 200
+Subtotal produced by process with ID 13215: 200
+Subtotal produced by process with ID 13216: 200
+Subtotal produced by process with ID 13217: 200
+Subtotal produced by process with ID 13218: 200
+Subtotal produced by process with ID 13219: 200
+Subtotal produced by process with ID 13220: 200
+Subtotal produced by process with ID 13221: 200
+Subtotal produced by process with ID 13222: 200
+Subtotal produced by process with ID 13223: 200
+Subtotal produced by process with ID 13224: 200
+Subtotal produced by process with ID 13225: 200
+Subtotal produced by process with ID 13226: 200
+Subtotal produced by process with ID 13227: 200
+Subtotal produced by process with ID 13228: 200
+Subtotal produced by process with ID 13229: 200
+Subtotal produced by process with ID 13230: 200
+Subtotal produced by process with ID 13231: 200
+Subtotal produced by process with ID 13232: 200
+Subtotal produced by process with ID 13233: 200
+Subtotal produced by process with ID 13234: 200
+Subtotal produced by process with ID 13235: 200
+Subtotal produced by process with ID 13236: 200
+Subtotal produced by process with ID 13237: 200
+Subtotal produced by process with ID 13238: 200
+Subtotal produced by process with ID 13239: 200
+Subtotal produced by process with ID 13240: 200
+Subtotal produced by process with ID 13241: 200
+Subtotal produced by process with ID 13242: 200
+Subtotal produced by process with ID 13243: 200
+Subtotal produced by process with ID 13244: 200
+Subtotal produced by process with ID 13245: 200
+Subtotal produced by process with ID 13246: 200
+Subtotal produced by process with ID 13247: 200
+Subtotal produced by process with ID 13150: 200
+Total: 20000
+

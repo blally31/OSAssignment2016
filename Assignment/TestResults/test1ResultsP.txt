@@ -1,0 +1,11 @@
+TEST 1 RESULTS
+./pmms test1MatrixA test1MatrixB 3 2 4
+
+Subtotal produced by process with ID 13018: 62
+Subtotal produced by process with ID 13019: 134
+Subtotal produced by process with ID 13020: 206
+Total: 402
+
+
+
+

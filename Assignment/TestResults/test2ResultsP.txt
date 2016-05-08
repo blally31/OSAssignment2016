@@ -1,0 +1,23 @@
+./pmms test2MatrixA test2MatrixB 20 11 40
+
+Subtotal produced by process with ID 13026: 25420
+Subtotal produced by process with ID 13027: 13940
+Subtotal produced by process with ID 13028: 16400
+Subtotal produced by process with ID 13029: 9840
+Subtotal produced by process with ID 13030: 18860
+Subtotal produced by process with ID 13031: 13940
+Subtotal produced by process with ID 13032: 19680
+Subtotal produced by process with ID 13033: 21320
+Subtotal produced by process with ID 13034: 20500
+Subtotal produced by process with ID 13035: 5740
+Subtotal produced by process with ID 13036: 7380
+Subtotal produced by process with ID 13037: 20500
+Subtotal produced by process with ID 13038: 17220
+Subtotal produced by process with ID 13039: 22960
+Subtotal produced by process with ID 13040: 20500
+Subtotal produced by process with ID 13041: 14760
+Subtotal produced by process with ID 13042: 18860
+Subtotal produced by process with ID 13043: 20500
+Subtotal produced by process with ID 13044: 13940
+Subtotal produced by process with ID 13045: 18860
+Total: 341120

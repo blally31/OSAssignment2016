@@ -1,0 +1,241 @@
+TEST 1 RESULTS
+./pmmsThread test1MatrixA test1MatrixB 3 2 4
+
+Subtotal produced by thread with ID 139785092052736: 134
+Subtotal produced by thread with ID 139785100445440: 62
+Subtotal produced by thread with ID 139785083660032: 206
+Total: 402
+
+
+
+TEST 2 RESULTS
+./pmmsThread test2MatrixA test2MatrixB 20 11 40
+
+Subtotal produced by thread with ID 140039828301568: 25420
+Subtotal produced by thread with ID 140039819908864: 13940
+Subtotal produced by thread with ID 140039811516160: 16400
+Subtotal produced by thread with ID 140039677232896: 18860
+Subtotal produced by thread with ID 140039803123456: 9840
+Subtotal produced by thread with ID 140039794730752: 13940
+Subtotal produced by thread with ID 140039786338048: 19680
+Subtotal produced by thread with ID 140039777945344: 21320
+Subtotal produced by thread with ID 140039769552640: 20500
+Subtotal produced by thread with ID 140039761159936: 5740
+Subtotal produced by thread with ID 140039752767232: 7380
+Subtotal produced by thread with ID 140039744374528: 20500
+Subtotal produced by thread with ID 140039735981824: 17220
+Subtotal produced by thread with ID 140039727589120: 22960
+Subtotal produced by thread with ID 140039719196416: 20500
+Subtotal produced by thread with ID 140039710803712: 14760
+Subtotal produced by thread with ID 140039702411008: 18860
+Subtotal produced by thread with ID 140039694018304: 20500
+Subtotal produced by thread with ID 140039685625600: 13940
+Subtotal produced by thread with ID 140039828301568: 18860
+Total: 341120
+
+
+
+TEST 3 RESULTS
+./pmmsThread test3MatrixA test3MatrixB 93 21 6
+
+Subtotal produced by thread with ID 139855865177856: 982
+Subtotal produced by thread with ID 139855873570560: 1430
+Subtotal produced by thread with ID 139855856785152: 445
+Subtotal produced by thread with ID 139855109834496: 442
+Subtotal produced by thread with ID 139855865177856: 1128
+Subtotal produced by thread with ID 139855839999744: 1040
+Subtotal produced by thread with ID 139855823214336: 1213
+Subtotal produced by thread with ID 139855831607040: 1613
+Subtotal produced by thread with ID 139855814821632: 1887
+Subtotal produced by thread with ID 139855798036224: 1082
+Subtotal produced by thread with ID 139855806428928: 1311
+Subtotal produced by thread with ID 139855789643520: 2009
+Subtotal produced by thread with ID 139855781250816: 1418
+Subtotal produced by thread with ID 139855772858112: 979
+Subtotal produced by thread with ID 139855764465408: 2433
+Subtotal produced by thread with ID 139855747680000: 1271
+Subtotal produced by thread with ID 139855756072704: 2244
+Subtotal produced by thread with ID 139855739287296: 1805
+Subtotal produced by thread with ID 139855722501888: 884
+Subtotal produced by thread with ID 139855730894592: 2442
+Subtotal produced by thread with ID 139855714109184: 823
+Subtotal produced by thread with ID 139855705716480: 2372
+Subtotal produced by thread with ID 139855697323776: 2381
+Subtotal produced by thread with ID 139855680538368: 509
+Subtotal produced by thread with ID 139855688931072: 1348
+Subtotal produced by thread with ID 139855672145664: 1857
+Subtotal produced by thread with ID 139855663752960: 1253
+Subtotal produced by thread with ID 139855655360256: 2195
+Subtotal produced by thread with ID 139855646967552: 433
+Subtotal produced by thread with ID 139855638574848: 1137
+Subtotal produced by thread with ID 139855630182144: 1619
+Subtotal produced by thread with ID 139855621789440: 918
+Subtotal produced by thread with ID 139855613396736: 1561
+Subtotal produced by thread with ID 139855605004032: 1412
+Subtotal produced by thread with ID 139855596611328: 1488
+Subtotal produced by thread with ID 139855588218624: 1442
+Subtotal produced by thread with ID 139855579825920: 1409
+Subtotal produced by thread with ID 139855571433216: 1338
+Subtotal produced by thread with ID 139855563040512: 1509
+Subtotal produced by thread with ID 139855554647808: 698
+Subtotal produced by thread with ID 139855546255104: 1570
+Subtotal produced by thread with ID 139855537862400: 1506
+Subtotal produced by thread with ID 139855529469696: 1729
+Subtotal produced by thread with ID 139855521076992: 503
+Subtotal produced by thread with ID 139855512684288: 2015
+Subtotal produced by thread with ID 139855504291584: 1680
+Subtotal produced by thread with ID 139855495898880: 826
+Subtotal produced by thread with ID 139855487506176: 863
+Subtotal produced by thread with ID 139855479113472: 1738
+Subtotal produced by thread with ID 139855470720768: 186
+Subtotal produced by thread with ID 139855462328064: 1805
+Subtotal produced by thread with ID 139855453935360: 2009
+Subtotal produced by thread with ID 139855445542656: 1695
+Subtotal produced by thread with ID 139855437149952: 1439
+Subtotal produced by thread with ID 139855428757248: 1604
+Subtotal produced by thread with ID 139855420364544: 308
+Subtotal produced by thread with ID 139855411971840: 1168
+Subtotal produced by thread with ID 139855403579136: 2067
+Subtotal produced by thread with ID 139855395186432: 1451
+Subtotal produced by thread with ID 139855386793728: 442
+Subtotal produced by thread with ID 139855378401024: 692
+Subtotal produced by thread with ID 139855370008320: 1793
+Subtotal produced by thread with ID 139855361615616: 2177
+Subtotal produced by thread with ID 139855353222912: 2061
+Subtotal produced by thread with ID 139855344830208: 1872
+Subtotal produced by thread with ID 139855336437504: 1284
+Subtotal produced by thread with ID 139855328044800: 1497
+Subtotal produced by thread with ID 139855319652096: 1924
+Subtotal produced by thread with ID 139855311259392: 857
+Subtotal produced by thread with ID 139855302866688: 1701
+Subtotal produced by thread with ID 139855294473984: 1732
+Subtotal produced by thread with ID 139855286081280: 1311
+Subtotal produced by thread with ID 139855277688576: 826
+Subtotal produced by thread with ID 139855269295872: 1149
+Subtotal produced by thread with ID 139855260903168: 1396
+Subtotal produced by thread with ID 139855252510464: 738
+Subtotal produced by thread with ID 139855244117760: 2183
+Subtotal produced by thread with ID 139855235725056: 1430
+Subtotal produced by thread with ID 139855227332352: 1619
+Subtotal produced by thread with ID 139855218939648: 189
+Subtotal produced by thread with ID 139855210546944: 1543
+Subtotal produced by thread with ID 139855202154240: 939
+Subtotal produced by thread with ID 139855193761536: 1052
+Subtotal produced by thread with ID 139855185368832: 1613
+Subtotal produced by thread with ID 139855176976128: 2253
+Subtotal produced by thread with ID 139855168583424: 951
+Subtotal produced by thread with ID 139855160190720: 1796
+Subtotal produced by thread with ID 139855151798016: 1195
+Subtotal produced by thread with ID 139855143405312: 314
+Subtotal produced by thread with ID 139855135012608: 1869
+Subtotal produced by thread with ID 139855126619904: 2049
+Subtotal produced by thread with ID 139855118227200: 1808
+Subtotal produced by thread with ID 139855848392448: 1634
+Total: 129811
+
+
+
+TEST 4 RESULTS
+./pmmsThread test4MatrixA test4MatrixB 100 100 100
+
+Subtotal produced by thread with ID 139638019942144: 200
+Subtotal produced by thread with ID 139638028334848: 200
+Subtotal produced by thread with ID 139638003156736: 200
+Subtotal produced by thread with ID 139637214242560: 200
+Subtotal produced by thread with ID 139637986371328: 200
+Subtotal produced by thread with ID 139637994764032: 200
+Subtotal produced by thread with ID 139637977978624: 200
+Subtotal produced by thread with ID 139638019942144: 200
+Subtotal produced by thread with ID 139637969585920: 200
+Subtotal produced by thread with ID 139637961193216: 200
+Subtotal produced by thread with ID 139637944407808: 200
+Subtotal produced by thread with ID 139637952800512: 200
+Subtotal produced by thread with ID 139637936015104: 200
+Subtotal produced by thread with ID 139637927622400: 200
+Subtotal produced by thread with ID 139637919229696: 200
+Subtotal produced by thread with ID 139637910836992: 200
+Subtotal produced by thread with ID 139637902444288: 200
+Subtotal produced by thread with ID 139637894051584: 200
+Subtotal produced by thread with ID 139637877266176: 200
+Subtotal produced by thread with ID 139637885658880: 200
+Subtotal produced by thread with ID 139637868873472: 200
+Subtotal produced by thread with ID 139637860480768: 200
+Subtotal produced by thread with ID 139637852088064: 200
+Subtotal produced by thread with ID 139637843695360: 200
+Subtotal produced by thread with ID 139637835302656: 200
+Subtotal produced by thread with ID 139637826909952: 200
+Subtotal produced by thread with ID 139637818517248: 200
+Subtotal produced by thread with ID 139637810124544: 200
+Subtotal produced by thread with ID 139637801731840: 200
+Subtotal produced by thread with ID 139637793339136: 200
+Subtotal produced by thread with ID 139637784946432: 200
+Subtotal produced by thread with ID 139637776553728: 200
+Subtotal produced by thread with ID 139637768161024: 200
+Subtotal produced by thread with ID 139637759768320: 200
+Subtotal produced by thread with ID 139637751375616: 200
+Subtotal produced by thread with ID 139637742982912: 200
+Subtotal produced by thread with ID 139637734590208: 200
+Subtotal produced by thread with ID 139637726197504: 200
+Subtotal produced by thread with ID 139637717804800: 200
+Subtotal produced by thread with ID 139637709412096: 200
+Subtotal produced by thread with ID 139637701019392: 200
+Subtotal produced by thread with ID 139637692626688: 200
+Subtotal produced by thread with ID 139637684233984: 200
+Subtotal produced by thread with ID 139637675841280: 200
+Subtotal produced by thread with ID 139637667448576: 200
+Subtotal produced by thread with ID 139637659055872: 200
+Subtotal produced by thread with ID 139637650663168: 200
+Subtotal produced by thread with ID 139637642270464: 200
+Subtotal produced by thread with ID 139637633877760: 200
+Subtotal produced by thread with ID 139637625485056: 200
+Subtotal produced by thread with ID 139637617092352: 200
+Subtotal produced by thread with ID 139637608699648: 200
+Subtotal produced by thread with ID 139637600306944: 200
+Subtotal produced by thread with ID 139637591914240: 200
+Subtotal produced by thread with ID 139637583521536: 200
+Subtotal produced by thread with ID 139637575128832: 200
+Subtotal produced by thread with ID 139637566736128: 200
+Subtotal produced by thread with ID 139637558343424: 200
+Subtotal produced by thread with ID 139637549950720: 200
+Subtotal produced by thread with ID 139637541558016: 200
+Subtotal produced by thread with ID 139637533165312: 200
+Subtotal produced by thread with ID 139637524772608: 200
+Subtotal produced by thread with ID 139637516379904: 200
+Subtotal produced by thread with ID 139637507987200: 200
+Subtotal produced by thread with ID 139637499594496: 200
+Subtotal produced by thread with ID 139637491201792: 200
+Subtotal produced by thread with ID 139637482809088: 200
+Subtotal produced by thread with ID 139637474416384: 200
+Subtotal produced by thread with ID 139637457630976: 200
+Subtotal produced by thread with ID 139637449238272: 200
+Subtotal produced by thread with ID 139637440845568: 200
+Subtotal produced by thread with ID 139637466023680: 200
+Subtotal produced by thread with ID 139637432452864: 200
+Subtotal produced by thread with ID 139637424060160: 200
+Subtotal produced by thread with ID 139637415667456: 200
+Subtotal produced by thread with ID 139637407274752: 200
+Subtotal produced by thread with ID 139637398882048: 200
+Subtotal produced by thread with ID 139637390489344: 200
+Subtotal produced by thread with ID 139637382096640: 200
+Subtotal produced by thread with ID 139637373703936: 200
+Subtotal produced by thread with ID 139637365311232: 200
+Subtotal produced by thread with ID 139637356918528: 200
+Subtotal produced by thread with ID 139637348525824: 200
+Subtotal produced by thread with ID 139637340133120: 200
+Subtotal produced by thread with ID 139637256206080: 200
+Subtotal produced by thread with ID 139637331740416: 200
+Subtotal produced by thread with ID 139637264598784: 200
+Subtotal produced by thread with ID 139637323347712: 200
+Subtotal produced by thread with ID 139637272991488: 200
+Subtotal produced by thread with ID 139637289776896: 200
+Subtotal produced by thread with ID 139637298169600: 200
+Subtotal produced by thread with ID 139637306562304: 200
+Subtotal produced by thread with ID 139637314955008: 200
+Subtotal produced by thread with ID 139637281384192: 200
+Subtotal produced by thread with ID 139637247813376: 200
+Subtotal produced by thread with ID 139637239420672: 200
+Subtotal produced by thread with ID 139637231027968: 200
+Subtotal produced by thread with ID 139638011549440: 200
+Subtotal produced by thread with ID 139637205849856: 200
+Subtotal produced by thread with ID 139637222635264: 200
+Total: 20000

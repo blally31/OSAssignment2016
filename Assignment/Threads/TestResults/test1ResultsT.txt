@@ -1,0 +1,11 @@
+TEST 1 RESULTS
+./pmmsThread test1MatrixA test1MatrixB 3 2 4
+
+Subtotal produced by thread with ID 139785092052736: 134
+Subtotal produced by thread with ID 139785100445440: 62
+Subtotal produced by thread with ID 139785083660032: 206
+Total: 402
+
+
+
+

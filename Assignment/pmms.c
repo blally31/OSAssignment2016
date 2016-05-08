@@ -5,7 +5,7 @@
 ** UNIT: COMP2006 (Operating Systems)
 ** PURPOSE: Imports two matrices and calculates the product using parallel 
 ** 			processes while summing each value into a row subtotal and 
-**			overall total. POSIX sempahores are used or process synchronization.
+**			overall total. POSIX sempahores are used for process synchronization.
 ** LAST MOD: 07/05/16
 ****************************************************************************
 **/
