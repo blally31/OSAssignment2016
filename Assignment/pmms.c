@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
 			/*Do child processing*/
 			else if (pid == 0)
 			{
-				childProcess(matrixA_ptr, matrixB_ptr, matrixC_ptr, ptr, i, m, n, k);
+				childProcess(matrixA_ptr, matrixB_ptr, matrixC_ptr, ptr, i, n, k);
 				exit(0);
 			}
 		}
@@ -157,18 +157,21 @@ void readMatrix(char* filename, int rows, int columns, int* matrix)
 ** process number.
 */
 void childProcess(int* matrixA, int* matrixB, int* matrixC, Shared* ptr, 
-	int processNum, int m, int n, int k)
+	int processNum, int n, int k)
 {
-	int i, subtotal = 0;
+	int i, j, value, subtotal = 0;
 
 	for (i = 0; i < k; i++)
 	{
-		
-		matrixC[getIndex(processNum, i, k)] = 
-			matrixA[getIndex(processNum, 0, n)]*matrixB[getIndex(0, i, k)] 
-				+ matrixA[getIndex(processNum, 1, n)]*matrixB[getIndex(1, i, k)];
+		value = 0;
 
-		subtotal += matrixC[getIndex(processNum, i, k)];
+		for (j = 0; j < n; j++)
+		{
+			value += matrixA[getIndex(processNum, j, n)]*matrixB[getIndex(j, i, k)];
+		}
+		
+		matrixC[getIndex(processNum, i, k)] = value;
+		subtotal += value;
 	}
 
 	sem_wait(&ptr->empty);

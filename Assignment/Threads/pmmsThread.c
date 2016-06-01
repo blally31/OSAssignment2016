@@ -137,7 +137,7 @@ void readMatrix(char* filename, int rows, int columns, int* matrix)
 */
 void* calculateSubtotal(void* ptr)
 {
-	int i, subtotal = 0, process, n, k;
+	int i, j, value, subtotal = 0, process, n, k;
 
 	/* Each thread should get its values mutually exclusively. */
 	pthread_mutex_lock(&mutex);
@@ -146,15 +146,19 @@ void* calculateSubtotal(void* ptr)
 	k = s->k; 
 	pthread_mutex_unlock(&mutex);
 
-	
 	for (i = 0; i < k; i++)
-	{		
-		s->matrixC[getIndex(process, i, k)] = 
-			s->matrixA[getIndex(process, 0, n)]*s->matrixB[getIndex(0, i, k)] 
-				+ s->matrixA[getIndex(process, 1, n)]*s->matrixB[getIndex(1, i, k)];
+	{
+		value = 0;
 
-		subtotal += s->matrixC[getIndex(process, i, k)];
+		for (j = 0; j < n; j++)
+		{
+			value += s->matrixA[getIndex(process, j, n)]*s->matrixB[getIndex(j, i, k)];
+		}
+		
+		s->matrixC[getIndex(process, i, k)] = value;
+		subtotal += value;
 	}
+
 	pthread_mutex_lock(&mutex);
 	
 	while (s->subtotal != 0)

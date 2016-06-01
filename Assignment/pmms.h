@@ -29,6 +29,6 @@ void* createMemory(char* name, int size);
 void readMatrix(char* filename, int rows, int columns, int* matrix);
 void printMatrix(int* matrix, int rows, int columns);
 int getIndex(int rows, int columns, int ncols);
-void childProcess(int* matrixA, int* matrixB, int* matrixC, Shared* ptr, int process, int m, int n, int k);
+void childProcess(int* matrixA, int* matrixB, int* matrixC, Shared* ptr, int process, int n, int k);
 
 #endif
